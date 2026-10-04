@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Good Luck, My Love ❤️</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(
+                135deg,
+                #ffd6e7,
+                #fff0f5,
+                #ffd1dc
+            );
+            overflow: hidden;
+            color: #5c2a3d;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 650px;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 45px 35px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 30px;
+            box-shadow: 0 15px 50px rgba(160, 60, 100, 0.25);
+            position: relative;
+            z-index: 2;
+            animation: appear 1.2s ease;
+        }
+
+        .heart {
+            font-size: 65px;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        h1 {
+            color: #d6336c;
+            font-size: 42px;
+            margin: 10px 0;
+        }
+
+        h2 {
+            color: #b52b59;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+
+        .highlight {
+            color: #d6336c;
+            font-weight: bold;
+        }
+
+        .love {
+            font-size: 22px;
+            margin-top: 25px;
+            color: #c2185b;
+            font-weight: bold;
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        /* Buttons */
+        .button {
+            display: inline-block;
+            margin: 12px 5px 0;
+            padding: 14px 28px;
+            background: #d6336c;
+            color: white;
+            border: none;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #b52b59;
+            transform: scale(1.05);
+        }
+
+        /* Floating hearts */
+        .floating-heart {
+            position: absolute;
+            bottom: -50px;
+            font-size: 25px;
+            animation: floatUp linear infinite;
+            opacity: 0.7;
+            z-index: 1;
+        }
+
+        .heart1 {
+            left: 10%;
+            animation-duration: 7s;
+        }
+
+        .heart2 {
+            left: 25%;
+            animation-duration: 9s;
+            animation-delay: 2s;
+        }
+
+        .heart3 {
+            left: 45%;
+            animation-duration: 6s;
+            animation-delay: 1s;
+        }
+
+        .heart4 {
+            left: 65%;
+            animation-duration: 8s;
+            animation-delay: 3s;
+        }
+
+        .heart5 {
+            left: 85%;
+            animation-duration: 10s;
+            animation-delay: 1s;
+        }
+
+        /* Heartbeat animation */
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* Floating animation */
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: translateY(-110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Card entrance */
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .card {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .heart {
+                font-size: 50px;
+            }
+
+            .button {
+                font-size: 15px;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="floating-heart heart1">❤️</div>
+    <div class="floating-heart heart2">💗</div>
+    <div class="floating-heart heart3">💕</div>
+    <div class="floating-heart heart4">💖</div>
+    <div class="floating-heart heart5">❤️</div>
+
+
+    <!-- Main Card -->
+    <div class="card">
+
+        <div class="heart">❤️</div>
+
+        <h1>Good Luck, My Love!</h1>
+
+        <h2>You've Got This! 🌸</h2>
+
+        <p>
+            To the most beautiful girl in my world,
+        </p>
+
+        <p>
+            I just wanted to remind you before your exams that
+            <span class="highlight">
+                I believe in you more than you know.
+            </span>
+        </p>
+
+        <p>
+            You've worked hard, you've prepared, and you've got
+            everything it takes to do amazingly well. 📚✨
+        </p>
+
+        <p>
+            Don't stress too much, my love. Take a deep breath,
+            trust yourself, and remember how incredibly smart and
+            capable you are.
+        </p>
+
+        <p>
+            No matter what happens, I'll always be proud of you.
+            Just give it your best and know that
+            <span class="highlight">
+                I'm cheering for you every step of the way.
+            </span>
+            ❤️
+        </p>
+
+        <div class="love">
+            Good luck on your exams, baby! 💕
+        </div>
+
+
+        <!-- Buttons -->
+        <button class="button" onclick="toggleMusic()">
+            🎵 <span id="musicText">Press this to play the song that i hear when i think of you or when you catch me looking at you</span>
+        </button>
+
+        <button class="button" onclick="showMessage()">
+            💌 Little reminder
+        </button>
+
+
+        <div class="signature">
+            I love you more than words can say. ❤️
+            <br>
+            — Your biggest fan 💗
+        </div>
+
+    </div>
+
+
+    <!-- Music -->
+    <audio id="mySong" loop>
+        <source src="Ruth_B_Dandelions.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <script>
+
+        // Music play / pause
+        function toggleMusic() {
+
+            const song = document.getElementById("mySong");
+            const musicText = document.getElementById("musicText");
+
+            if (song.paused) {
+
+                song.play()
+                    .then(() => {
+                        musicText.textContent = "Pause our song";
+                    })
+                    .catch((error) => {
+                        console.log("Music could not be played:", error);
+                        alert("Please make sure Ruth_B_Dandelions.mp3 is in the same folder as this HTML file.");
+                    });
+
+            } else {
+
+                song.pause();
+                musicText.textContent = "Play our song";
+            }
+        }
+
+
+        // Reminder message
+        function showMessage() {
+
+            const song = document.getElementById("mySong");
+
+            // Start music when the user clicks the reminder
+            if (song.paused) {
+                song.play().catch((error) => {
+                    console.log("Music could not be played:", error);
+                });
+            }
+
+            alert(
+                "Remember: You're smart, beautiful, and capable. ❤️\n\n" +
+                "I believe in you! Now go smash those exams! 📚✨"
+            );
+        }
+
+    </script>
+
+</body>
+</html>
